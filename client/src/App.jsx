@@ -1,7 +1,15 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { FiCheck } from 'react-icons/fi';
-import Navbar from './components/Navbar.jsx';
-import UploadSection from './components/UploadSection.jsx';
+import { 
+  FiCheck, 
+  FiLayers, 
+  FiShield, 
+  FiDatabase, 
+  FiZap, 
+  FiPlay, 
+  FiRotateCcw,
+  FiActivity
+} from 'react-icons/fi';
+import Sidebar from './components/Sidebar.jsx';
 import SummaryCards from './components/SummaryCards.jsx';
 import SentimentChart from './components/SentimentChart.jsx';
 import InsightsSection from './components/InsightsSection.jsx';
@@ -203,66 +211,173 @@ export default function App() {
   };
 
   return (
-    <div className="app-layout">
-      <Navbar serverStatus={serverStatus} model={activeModel} />
+    <div className="app-shell">
+      {/* 1. Left Sidebar Command Rail */}
+      <Sidebar
+        serverStatus={serverStatus}
+        model={activeModel}
+        selectedFile={selectedFile}
+        onFileUpload={handleFileUpload}
+        onAnalyze={handleAnalyze}
+        isLoading={isLoading}
+        error={error}
+        onLoadSample={handleLoadSample}
+        stats={stats}
+        activeTab={filterSentiment}
+        onTabChange={(tab) => setFilterSentiment(tab)}
+      />
 
-      <main className="main-content">
-        {/* Upload Hero Section */}
-        <UploadSection
-          onFileUpload={handleFileUpload}
-          onAnalyze={handleAnalyze}
-          selectedFile={selectedFile}
-          isLoading={isLoading}
-          error={error}
-          onLoadSample={handleLoadSample}
-          model={activeModel}
-        />
+      {/* 2. Right Main Workspace Cockpit */}
+      <main className="workspace-main">
+        {/* Workspace Sticky Topbar */}
+        <header className="workspace-topbar">
+          <div className="topbar-left">
+            <span className="topbar-title">Review Intelligence Cockpit</span>
+            <span className="topbar-badge-tag">
+              {stats ? `${stats.total_rows} Records Loaded` : 'Awaiting CSV Upload'}
+            </span>
+          </div>
 
-        {/* Dedicated Analysis Modal while Analysing (shows Model & Live Pipeline) */}
-        {isLoading && (
-          <Loader
-            model={activeModel}
-            message="Analyzing customer reviews in batches of 5 with Groq AI..."
-          />
-        )}
+          <div className="topbar-right">
+            <div className="status-indicator-pill" title="Active Groq AI Model">
+              <FiActivity size={13} color="#2563EB" />
+              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', color: '#1E40AF' }}>
+                {activeModel}
+              </span>
+            </div>
 
-        {/* Dashboard Analytics */}
-        {!isLoading && stats && (
-          <>
-            {/* 1. Summary Metric Cards */}
-            <SummaryCards stats={stats} />
+            {stats && (
+              <button
+                type="button"
+                className="btn btn-secondary btn-xs"
+                onClick={handleResetFilters}
+                title="Reset all filters"
+              >
+                <FiRotateCcw size={12} />
+                Reset
+              </button>
+            )}
+          </div>
+        </header>
 
-            {/* 2. Sentiment Distribution Chart */}
-            <SentimentChart stats={stats} />
+        {/* Scrollable Workspace Content */}
+        <div className="workspace-content-scroll">
+          {/* Zero-State / Getting Started Hero Banner when no reviews analysed yet */}
+          {!stats && (
+            <div className="hero-welcome-card">
+              <div className="hero-welcome-header">
+                <div>
+                  <h1 className="hero-headline">Customer Review Intelligence Platform</h1>
+                  <p className="hero-subheadline">
+                    Automated e-commerce customer review classification, dynamic issue extraction, and on-demand empathetic reply generation powered by Groq AI and Llama models.
+                  </p>
+                </div>
+              </div>
 
-            {/* 3. Top 3 Complaints & Praises Insights */}
-            <InsightsSection insights={insights} />
+              {/* 3 Architecture Pillars */}
+              <div className="hero-pillars-grid">
+                <div className="hero-pillar-item">
+                  <div className="pillar-icon-box">
+                    <FiShield size={16} />
+                  </div>
+                  <h3 className="pillar-title">Prompt Injection Defense</h3>
+                  <p className="pillar-desc">
+                    Review text is strictly isolated in user data boundaries. Malicious instructions in reviews like R012 &amp; R015 are neutralized.
+                  </p>
+                </div>
 
-            {/* 4. Filter & Search Bar */}
-            <FilterSection
-              products={uniqueProducts}
-              selectedProduct={filterProduct}
-              onProductChange={setFilterProduct}
-              selectedSentiment={filterSentiment}
-              onSentimentChange={setFilterSentiment}
-              selectedTopic={filterTopic}
-              onTopicChange={setFilterTopic}
-              searchQuery={searchQuery}
-              onSearchChange={setSearchQuery}
-              onResetFilters={handleResetFilters}
-              totalResults={filteredReviews.length}
-              needsReplyCount={stats.needs_reply_count || 0}
-            />
+                <div className="hero-pillar-item">
+                  <div className="pillar-icon-box">
+                    <FiDatabase size={16} />
+                  </div>
+                  <h3 className="pillar-title">SHA-256 Deduplication</h3>
+                  <p className="pillar-desc">
+                    Normalized review texts are hashed with SHA-256 and cached locally. Duplicate rows and repeated uploads incur 0 API cost.
+                  </p>
+                </div>
 
-            {/* 5. Detailed Review Table */}
-            <ReviewTable
-              reviews={filteredReviews}
-              onGenerateReply={handleOpenReplyModal}
-              isGeneratingReply={isGeneratingReply}
-            />
-          </>
-        )}
+                <div className="hero-pillar-item">
+                  <div className="pillar-icon-box">
+                    <FiZap size={16} />
+                  </div>
+                  <h3 className="pillar-title">Sequential Batch Processing</h3>
+                  <p className="pillar-desc">
+                    Reviews are processed in controlled batches of 5 with exponential backoff handling HTTP 429 rate limits and 5xx errors.
+                  </p>
+                </div>
+              </div>
+
+              {/* Hero Call To Action Bar */}
+              <div className="hero-cta-bar">
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <span style={{ fontSize: '13px', fontWeight: '700', color: 'var(--text-heading)' }}>
+                    Ready to test?
+                  </span>
+                  <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
+                    Click below to load all 30 assessment records or use the sidebar to upload a file.
+                  </span>
+                </div>
+
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  onClick={async () => {
+                    await handleLoadSample();
+                  }}
+                  disabled={isLoading}
+                >
+                  <FiLayers size={14} />
+                  Load Assessment Dataset (30 Reviews)
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* When Data is Loaded: Executive Dashboard Cockpit */}
+          {stats && (
+            <>
+              {/* Row 1: KPI Summary Cards (5 Executive Cards) */}
+              <SummaryCards stats={stats} />
+
+              {/* Row 2: Split Grid (Sentiment Spectrum on Left, Dynamic Insights on Right) */}
+              <div className="middle-split-row">
+                <SentimentChart stats={stats} />
+                <InsightsSection insights={insights} />
+              </div>
+
+              {/* Row 3: Reviews Data Explorer Toolbar & Table */}
+              <FilterSection
+                products={uniqueProducts}
+                selectedProduct={filterProduct}
+                onProductChange={setFilterProduct}
+                selectedSentiment={filterSentiment}
+                onSentimentChange={setFilterSentiment}
+                selectedTopic={filterTopic}
+                onTopicChange={setFilterTopic}
+                searchQuery={searchQuery}
+                onSearchChange={setSearchQuery}
+                onResetFilters={handleResetFilters}
+                totalResults={filteredReviews.length}
+                needsReplyCount={stats.needs_reply_count || 0}
+              />
+
+              <ReviewTable
+                reviews={filteredReviews}
+                onGenerateReply={handleOpenReplyModal}
+                isGeneratingReply={isGeneratingReply}
+              />
+            </>
+          )}
+        </div>
       </main>
+
+      {/* Dedicated Analysis Modal while Analysing (shows Model & Live Pipeline) */}
+      {isLoading && (
+        <Loader
+          model={activeModel}
+          message="Analyzing customer reviews in batches of 5 with Groq AI..."
+        />
+      )}
 
       {/* Suggested Reply Modal */}
       <ReplyModal
@@ -276,7 +391,7 @@ export default function App() {
       {/* Floating Toast Notification */}
       {toastMessage && (
         <div className="toast-floating">
-          <FiCheck size={15} color="#10B981" />
+          <FiCheck size={14} color="#10B981" />
           <span>{toastMessage}</span>
         </div>
       )}
