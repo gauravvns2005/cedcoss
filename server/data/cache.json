@@ -1,0 +1,475 @@
+{
+  "155ea5277ff5a219c5996122a98a6a34521a70c9e8d7447c48527af1d8132915": {
+    "sentiment": "positive",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Outstanding battery life and crystal clear sound make the customer very happy.",
+    "needs_reply": false
+  },
+  "8882f0d108771251e7a64696feda72fc7bb812b1cda4a8dd5462114d3435a62d": {
+    "sentiment": "negative",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Product squeaks, disappointing quality.",
+    "needs_reply": true
+  },
+  "82a541b650fd64350f6992bf7a38775698b869a7c7f5f4746e354405396e040e": {
+    "sentiment": "positive",
+    "topics": [
+      "quality"
+    ],
+    "summary": "The product has excellent tactile switches and solid build quality.",
+    "needs_reply": false
+  },
+  "a26a7bdc985b841d23af93597b25e7f1b04778ae5a151d2bdbbff77b0ca0d5d9": {
+    "sentiment": "negative",
+    "topics": [
+      "quality"
+    ],
+    "summary": "The device has poor battery life and inaccurate heart rate monitoring.",
+    "needs_reply": true
+  },
+  "de97c3f29f239ff2e75eb80b07e5170efce19530bc02aa1d34f51221cb655517": {
+    "sentiment": "neutral",
+    "topics": [
+      "quality",
+      "price"
+    ],
+    "summary": "Decent blender but noisy, acceptable price.",
+    "needs_reply": false
+  },
+  "339ec34a242b1cab5db6233fb112b083c22bc4836dac2dfd2f6f82b1ed60395a": {
+    "sentiment": "negative",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Earbud stopped working after two days and won't charge.",
+    "needs_reply": true
+  },
+  "ece5310dbaadb49e2f50c2d1d894e7c6d290fb6ed71a72569fbfa46064a57f78": {
+    "sentiment": "negative",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Sole detached during run, poor build quality.",
+    "needs_reply": true
+  },
+  "59682f0d1eeeef5fcadb25efad81075a0f2b555e585a76f80831c6c9470dee7f": {
+    "sentiment": "positive",
+    "topics": [
+      "other"
+    ],
+    "summary": "Positive reaction.",
+    "needs_reply": false
+  },
+  "84368679a8a57da287078a969be69ae517eceb11c8e3890a0675b4dd3fb3dd40": {
+    "sentiment": "positive",
+    "topics": [
+      "quality",
+      "other"
+    ],
+    "summary": "Positive espresso quality but water reservoir is awkward to detach.",
+    "needs_reply": true
+  },
+  "f90d776d7496649ecfc23a96a1ae0bc296e245121702895810eae8373c1b2ea2": {
+    "sentiment": "positive",
+    "topics": [
+      "quality"
+    ],
+    "summary": "The mugs look great and were well-received as a gift.",
+    "needs_reply": false
+  },
+  "d6a3e18a793cd197b8feb4123384a1b04dd0a6fbddc1e7065f2d5dde41f317ee": {
+    "sentiment": "negative",
+    "topics": [
+      "quality",
+      "size_fit"
+    ],
+    "summary": "The fabric is good but the wrong size was received.",
+    "needs_reply": true
+  },
+  "2f5bfc2f3b3b36874d2884db30878a8f5ac7127ac8c6ed7802e223e1eb8a1fed": {
+    "sentiment": "positive",
+    "topics": [
+      "delivery"
+    ],
+    "summary": "Fast delivery impressed the customer.",
+    "needs_reply": false
+  },
+  "dc6b033635b81052ad5cf66b300a4bddf96e5c5348f25513c9c0ccd8b016c72b": {
+    "sentiment": "positive",
+    "topics": [
+      "quality",
+      "price"
+    ],
+    "summary": "The product is soft, colorfast, and worth the price.",
+    "needs_reply": false
+  },
+  "dc37e76224f450ac4cb6744b341e1e6c4a1a82018771de7adbedbcb5e116aa89": {
+    "sentiment": "neutral",
+    "topics": [
+      "quality",
+      "packaging"
+    ],
+    "summary": "Good product but packaging was broken.",
+    "needs_reply": true
+  },
+  "a0f637b7797fbedb4eac8cc938719cf482b2df2d469e0bfcdb1ff7507b34af04": {
+    "sentiment": "negative",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Handles fell off quickly, product quality poor.",
+    "needs_reply": true
+  },
+  "ee390baae7109ea05ca9a125d19dbcf8e1a0263a2b0661f2a1948ca350b67efb": {
+    "sentiment": "negative",
+    "topics": [
+      "quality",
+      "support"
+    ],
+    "summary": "Broken mug and slow support with no refund.",
+    "needs_reply": true
+  },
+  "c7228e6a0b46c1a3d583fbde5674e12374ec60593079686e68a7b1cc76a9e46b": {
+    "sentiment": "negative",
+    "topics": [
+      "quality",
+      "price"
+    ],
+    "summary": "Good quality but too expensive compared to local market.",
+    "needs_reply": true
+  },
+  "059070e6c5c36356fabaf435e9e9df297699c33665bd9a427ccee5dc5b5fb206": {
+    "sentiment": "positive",
+    "topics": [
+      "quality",
+      "price",
+      "packaging"
+    ],
+    "summary": "Good sound and price, but battery moderate and case cheap.",
+    "needs_reply": false
+  },
+  "a1e8506eee40737f6aa0b9faa9c86773bc305b1db2730d08f1119d96c8b8f9dc": {
+    "sentiment": "positive",
+    "topics": [
+      "other"
+    ],
+    "summary": "Thumbs up.",
+    "needs_reply": false
+  },
+  "533d0d63b53eec50137a49f00cdbce71f4a9a07962aa0df1e2321f220d770d5f": {
+    "sentiment": "positive",
+    "topics": [
+      "quality",
+      "delivery"
+    ],
+    "summary": "Satisfied with product quality and fast delivery.",
+    "needs_reply": false
+  },
+  "a2cf8d35a927c5d2352d65da1d14dd06df8cec7673fe9af0eb3f41ac5826555b": {
+    "sentiment": "positive",
+    "topics": [
+      "quality"
+    ],
+    "summary": "The shoes are light, comfortable, and blister-free during a half marathon.",
+    "needs_reply": false
+  },
+  "c499aea9604a46bc60bc96e1ed13ea98db2a64749067a436e9b24e6d66f11204": {
+    "sentiment": "negative",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Left earbud stopped working after 2 days.",
+    "needs_reply": true
+  },
+  "25c0d57f10ed925a78ff8bca0f9b3fa02b94404e0b64b816a78f74c194f8c6e9": {
+    "sentiment": "negative",
+    "topics": [
+      "support"
+    ],
+    "summary": "Connection drops and support is unhelpful.",
+    "needs_reply": true
+  },
+  "84363925af9fb1f665108e5d51df7c009c1b3638c2ee74a7780f70dc6538e764": {
+    "sentiment": "negative",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Good sound but battery drains quickly.",
+    "needs_reply": true
+  },
+  "f0c44e54acf5146c0972df0f743b0a99baf14ba5720844865f886c1095ed6bb4": {
+    "sentiment": "positive",
+    "topics": [
+      "quality"
+    ],
+    "summary": "The shoes are the best the customer has bought online.",
+    "needs_reply": false
+  },
+  "e28ad92b59482c8060cc855bf44f5cad1ae798572313da566a26ae32d743c4dd": {
+    "sentiment": "negative",
+    "topics": [
+      "size_fit"
+    ],
+    "summary": "Size chart misleading, shoes too tight for size 9, but exchange process was smooth.",
+    "needs_reply": true
+  },
+  "9aca8a66aed094f3527cc8b84e0d699b4a197c8ba13ca96d1457cc4af41ce95f": {
+    "sentiment": "negative",
+    "topics": [
+      "quality",
+      "delivery"
+    ],
+    "summary": "Delivery boy was rude and product was mediocre.",
+    "needs_reply": true
+  },
+  "bb00bf94c4d87b37849475714a02e8401c70525a290181c76f2f63a348e30e9b": {
+    "sentiment": "negative",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Customer received a used pair with mud on the sole.",
+    "needs_reply": true
+  },
+  "a56ba944ac1bfafb0974977a0ad8530ae4fc869f169fc233b65d4372b5154d99": {
+    "sentiment": "positive",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Positive review noting good grip and look, but slight sole wear after two months of daily runs.",
+    "needs_reply": false
+  },
+  "c9b72095acd5c8256e7714f1521f985ee8afb75ea11d3d166da6fc4b6c88277e": {
+    "sentiment": "positive",
+    "topics": [
+      "quality",
+      "support"
+    ],
+    "summary": "Neat design but confusing assembly instructions.",
+    "needs_reply": true
+  },
+  "c6d55b84a57b4e9e7da7c282b889b42569c86cbbf666053ed575a377b9bb7424": {
+    "sentiment": "positive",
+    "topics": [
+      "quality"
+    ],
+    "summary": "The product keeps the desk clean and smells nice.",
+    "needs_reply": false
+  },
+  "504e727e9617e93075d208c78162940b031204ac51ffd7b0bbf909845c13cc7f": {
+    "sentiment": "negative",
+    "topics": [
+      "delivery",
+      "support"
+    ],
+    "summary": "Package not received despite tracking, no support response.",
+    "needs_reply": true
+  },
+  "42bd2d25da6685346bbf2d6ff6dba50007de70f358b3f581b3e13eaf955ec5ff": {
+    "sentiment": "positive",
+    "topics": [
+      "quality",
+      "price"
+    ],
+    "summary": "Product is good but a bit pricey.",
+    "needs_reply": false
+  },
+  "637054c12ad9bdd3ccf8d331fe2237104bcc7751ccb7598063c57b3cb4f19851": {
+    "sentiment": "negative",
+    "topics": [
+      "size_fit"
+    ],
+    "summary": "Product is smaller than advertised and barely fits pens.",
+    "needs_reply": true
+  },
+  "c3f5ec3b18df5dc177aa0b93ff1183ce73760b0ba56b58da4e172b36a0803d1e": {
+    "sentiment": "neutral",
+    "topics": [
+      "quality",
+      "other"
+    ],
+    "summary": "Mugs are nice but lack microwave safety info.",
+    "needs_reply": true
+  },
+  "0162301e8a366f3468154ca56ea424eae76b262ada293b68497d00e55fadbbae": {
+    "sentiment": "positive",
+    "topics": [
+      "quality",
+      "delivery",
+      "size_fit"
+    ],
+    "summary": "The product quality exceeded expectations, but the pillow covers are a bit too small.",
+    "needs_reply": false
+  },
+  "69c97495d0457d0497a5e0f05ab0e76ff258a9342539c9bc8fb8aac7159fbb93": {
+    "sentiment": "negative",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Mic quality is poor, causing call issues.",
+    "needs_reply": true
+  },
+  "543155439a3f0e57c54b20d0ff3d0fde52b668ee168920a88835468558e05eda": {
+    "sentiment": "positive",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Positive review praising sensor tracking but noting stiff cord.",
+    "needs_reply": true
+  },
+  "94869b5480ef3dae2a7c44268ede1750002cce8c99ad774abfaac4e2c750c3ba": {
+    "sentiment": "negative",
+    "topics": [
+      "delivery",
+      "packaging",
+      "support"
+    ],
+    "summary": "Delivery was delayed, box dented, and support was rude.",
+    "needs_reply": true
+  },
+  "e785e6ad5a40fea18d516d03d05f5a7f90c5aedb77a6421f9e72ea5b2db8c6ea": {
+    "sentiment": "negative",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Watch broke after two days, screen not working, poor quality.",
+    "needs_reply": true
+  },
+  "913eecabddc4adf6ac04c9ce097bfb72cfc16a21c06c78e4bba483f4c32ac1ab": {
+    "sentiment": "negative",
+    "topics": [
+      "quality"
+    ],
+    "summary": "The sound is muffled and the right speaker crackles constantly.",
+    "needs_reply": true
+  },
+  "f66fc70c53d8617709741a8bed58fd472d9b28a7e1fba16088b7a332b0033af5": {
+    "sentiment": "negative",
+    "topics": [
+      "size_fit",
+      "quality"
+    ],
+    "summary": "The XL size fits too small and the fabric shrank after a cold wash.",
+    "needs_reply": true
+  },
+  "91faa10e272a4ac0da695a805d40e080f82db278b6fa5e9752feb8111c18f0fc": {
+    "sentiment": "positive",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Good sound quality but mic during calls is average.",
+    "needs_reply": true
+  },
+  "418cac5b46eb3c34288927cb766496c0d871004884d3d362b8ec3f92b91bd5c2": {
+    "sentiment": "negative",
+    "topics": [
+      "packaging",
+      "support"
+    ],
+    "summary": "Missing replacement filter and unresolved support leads to refund request.",
+    "needs_reply": true
+  },
+  "db0f9179fdd29d91a716ce6d38b5683672d9297b73419eef015cf07f9a56fb0f": {
+    "sentiment": "positive",
+    "topics": [
+      "packaging"
+    ],
+    "summary": "Packaging was excellent and the item arrived undamaged.",
+    "needs_reply": false
+  },
+  "5ebda77ecb2912704634f64cecaa992c748f39405c6bcd55a82f054515f7c52e": {
+    "sentiment": "positive",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Fast charging and portable design.",
+    "needs_reply": false
+  },
+  "b092497f3b72b00f840fb94ab629fc1af6b1a3af18c99758ff38ad965ad95e06": {
+    "sentiment": "positive",
+    "topics": [
+      "price",
+      "quality"
+    ],
+    "summary": "The product's aluminum finish and fast HDMI 4K output justify its higher price.",
+    "needs_reply": false
+  },
+  "4c17c4594340898c11de2eae8c3122d6bee527b94a3d054d79a8993871cd4a70": {
+    "sentiment": "negative",
+    "topics": [
+      "quality"
+    ],
+    "summary": "The lighting is good but the touch button is too sensitive.",
+    "needs_reply": true
+  },
+  "1b2774af9dccb566f6d5f858d91294fbd30265c7f6491cc9a445c9ed961d9e05": {
+    "sentiment": "positive",
+    "topics": [
+      "quality"
+    ],
+    "summary": "The speaker has powerful sound, great bass, and long battery life.",
+    "needs_reply": false
+  },
+  "970f174f7ac31d6150277d52cb5f8cd30c33a73beaaa99da3af2925634f606ef": {
+    "sentiment": "positive",
+    "topics": [
+      "delivery",
+      "quality"
+    ],
+    "summary": "Fast delivery and the mouse works well.",
+    "needs_reply": false
+  },
+  "20dcfce2299e0669d554c29f994b76a09a98d83d468196fa6f8ee7d3969aa103": {
+    "sentiment": "negative",
+    "topics": [
+      "quality"
+    ],
+    "summary": "The customer is unhappy with the product's quality.",
+    "needs_reply": true
+  },
+  "201829ad2405eb9822d90ba9656cc05ef819507e7eeeb570f5787eee5d9809b9": {
+    "sentiment": "neutral",
+    "topics": [
+      "quality",
+      "delivery"
+    ],
+    "summary": "Good product but delivery delayed.",
+    "needs_reply": true
+  },
+  "6f071ba39495e61587d5798c0a19e442123d0eb198b83bb811beb1f5d334c6d3": {
+    "sentiment": "negative",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Kettle emits burning plastic smell and smoke, posing hazard, needs replacement.",
+    "needs_reply": true
+  },
+  "c32f73c530767ce30b9d34ac9dd19aeaa6ee3d6a7620c46e2d3d7c26abc9fede": {
+    "sentiment": "positive",
+    "topics": [
+      "quality"
+    ],
+    "summary": "The product reliably transmits 4K 120Hz to the TV with standard build quality.",
+    "needs_reply": false
+  },
+  "4d9c5c2fb9ca20df4d0faab3a79174e5d40355841feb7d0727479ff3aac9079d": {
+    "sentiment": "negative",
+    "topics": [
+      "quality"
+    ],
+    "summary": "Stitching on card slots broke quickly, not genuine leather.",
+    "needs_reply": true
+  },
+  "c10aa6eff9b9f7f9c419a5c22986ab4ce449cc5cc1725c1cab02e81aed2344a2": {
+    "sentiment": "positive",
+    "topics": [
+      "quality",
+      "support"
+    ],
+    "summary": "Positive review praising noise cancellation and asking how to reset Bluetooth.",
+    "needs_reply": false
+  }
+}
